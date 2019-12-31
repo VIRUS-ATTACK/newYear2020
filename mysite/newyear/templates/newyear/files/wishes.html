@@ -3,6 +3,47 @@
         <title>Happy Birthday</title>
         <style>
             /* If you can't see it just hit space in here*/
+
+            .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
+            }
+
+            .button1 {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #4CAF50;
+            }
+
+            .float{
+            position:fixed;
+            width:60px;
+            height:60px;
+            bottom:40px;
+            right:40px;
+            background-color:#25d366;
+            color:#FFF;
+            border-radius:50px;
+            text-align:center;
+        font-size:30px;
+            box-shadow: 2px 2px 3px #999;
+        z-index:100;
+        }
+
+        .my-float{
+            margin-top:16px;
+        }
+
             body {
                 font-family:'Wendy One', sans-serif;
             }
@@ -316,8 +357,8 @@
             }
         </script>
         <input  type="name" id="myText" onChange="update(this.value);"  required maxlength="50" name="n" placeholder="👉 Enter Your Name Here..."><br>
-        <button type="submit" onclick="document.getElementById('username').innerHTML='by' + document.getElementById('myText').value"><span>👉</span> Go </button>
-        <a id="myAnchor" ><img width="25px" height="25px" src="http:../wow/wp.png"><b style="font-size: 15px;">Click here to Share on Whatsapp</b> <img width="25px" height="25px" src="http:../wow/wp.png"></a>
+        <button class="button button1" type="submit" onclick="document.getElementById('username').innerHTML='by' + document.getElementById('myText').value"><span>👉</span> Go </button>
+        <a id="myAnchor" ><i class="fa fa-whatsapp my-float"></i><b style="font-size: 15px;">Click here to Share on Whatsapp</b> <i class="fa fa-whatsapp my-float"></i></a>
         <script>
             function update(value){
                 var anchorText = "whatsapp://send?text=I'm *" + value + "* %0AOpen this once👇👇 %0A  http://104.209.158.77/" + value + "/ %0A"; 
