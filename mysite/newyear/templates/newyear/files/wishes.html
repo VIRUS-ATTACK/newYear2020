@@ -316,8 +316,13 @@
             }
         </script>
         <input  type="name" id="myText" required="" maxlength="50" name="n" placeholder="👉 Enter Your Name Here..."><br>
-        <button type="submit" onclick="document.getElementById('username').innerHTML=document.getElementById('myText').value"><span>👉</span> Go </button>
-        <a  href="whatsapp://send?text=I'm *surya* %0AOpen this once👇👇 %0A wish-you.co/wow/?n=surya %0A"><img width="25px" height="25px" src="http:../wow/wp.png"><b style="font-size: 15px;">Click here to Share on Whatsapp</b> <img width="25px" height="25px" src="http:../wow/wp.png"></a>
+        <button type="submit" onclick="document.getElementById('username').innerHTML='by' + document.getElementById('myText').value"><span>👉</span> Go </button>
+        <a id="myAnchor" ><img width="25px" height="25px" src="http:../wow/wp.png"><b style="font-size: 15px;">Click here to Share on Whatsapp</b> <img width="25px" height="25px" src="http:../wow/wp.png"></a>
+        <script>
+            var name = document.getElementById('myText').value;
+            var anchorText = "whatsapp://send?text=I'm *" + name + "* %0AOpen this once👇👇 %0A  http://104.209.158.77/" + name + "/ %0A"; 
+            document.getElementById("myAnchor").value = anchorText;
+        </script>
     
 
 </body></html>
