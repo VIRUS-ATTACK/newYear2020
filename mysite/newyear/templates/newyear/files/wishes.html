@@ -361,7 +361,7 @@
                 </div>
             </div>
             <h1>Happy New Year 2020</h1><br>
-            <h1 id="username" >by {{username}}</h1>
+            <h1 id="username" >{{username}}</h1>
           
 
         </div>
@@ -377,8 +377,10 @@
         <br>
         <br>
         <br>
+        <br>
+        <br>
         <input  type="name" id="myText" onChange="update(this.value);"  required maxlength="50" name="n" placeholder="Enter Your Name Here..."><br>
-        <button class="button button4" type="submit" onclick="document.getElementById('username').innerHTML='by' + document.getElementById('myText').value"> Go </button>
+        <button class="button button4" type="submit" onclick="document.getElementById('username').innerHTML=document.getElementById('myText').value"> Go </button>
         
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
             <a id="myAnchor" class="float" target="_blank">
