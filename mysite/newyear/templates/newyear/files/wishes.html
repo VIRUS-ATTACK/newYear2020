@@ -338,13 +338,11 @@
         </script>
         <input  type="name" id="myText" onChange="update(this.value);"  required maxlength="50" name="n" placeholder="👉 Enter Your Name Here..."><br>
         <button class="button button1" type="submit" onclick="document.getElementById('username').innerHTML='by' + document.getElementById('myText').value"><span>👉</span> Go </button>
-        <a id="myAnchor" ><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-            <a  class="float" target="_blank">
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+            <a id="myAnchor" class="float" target="_blank">
             <i class="fa fa-whatsapp my-float"></i>
-            </a></i><b style="font-size: 15px;">Click here to Share on Whatsapp</b> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-            <a  class="float" target="_blank">
-            <i class="fa fa-whatsapp my-float"></i>
-            </a></i></a>
+            </a>
         <script>
             function update(value){
                 var anchorText = "whatsapp://send?text=I'm *" + value + "* %0AOpen this once👇👇 %0A  http://104.209.158.77/" + value + "/ %0A"; 
