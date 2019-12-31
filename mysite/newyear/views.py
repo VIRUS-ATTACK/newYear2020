@@ -4,6 +4,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request,username = 'your friend'):
-    context = {'user':username}
+    context = {'usernamename':username}
     return render(request,'newyear/files/wishes.html',context)
     #return HttpResponse("Happy new Year 2020")
