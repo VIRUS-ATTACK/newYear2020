@@ -4,4 +4,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("Happy new Year 2020")
+    return render(request,'newyear/files/wishes.html')
+    #return HttpResponse("Happy new Year 2020")
