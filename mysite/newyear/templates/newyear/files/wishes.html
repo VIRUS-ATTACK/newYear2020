@@ -341,7 +341,17 @@
             text-decoration: none;
             }
 
-            
+            a:visited {
+            text-decoration: none;
+            }
+
+            a:hover {
+            text-decoration: underline;
+            }
+
+            a:active {
+            text-decoration: underline;
+            }
         </style>
         <script>
             window.open = function() {};
@@ -401,7 +411,7 @@
         <input  type="text" id="myText" onChange="update(this.value);"  required maxlength="50" name="n" placeholder="Enter Your Name Here..."><br>
         <button class="button button4" type="submit" onclick="document.getElementById('username').innerHTML=document.getElementById('myText').value">👉 create </button>
 
-            <h3 class="floatB" ><a id="myAnchor">Click here to share on WhatsApp</a></h3>
+            <h3 class="floatB" ><a id="myAnchor1">Click here to share on WhatsApp</a></h3>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
             <a id="myAnchor" class="float" target="_blank">
             <i class="fa fa-whatsapp my-float"></i>
@@ -410,6 +420,7 @@
             function update(value){
                 var anchorText = "whatsapp://send?text=I'm *" + value + "* %0AOpen this once👇👇 %0A  http://wishmeyaar.online/" + value + "/ %0A"; 
                 document.getElementById("myAnchor").href = anchorText;
+                document.getElementById("myAnchor1").href = anchorText;
             }
             // var name = document.getElementById('myText').value;
             
